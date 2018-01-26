@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.software.dzungvu.jzunews">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FavoriteActivity" />
+        <activity android:name=".NewsPage" />
+        <activity android:name=".WorldPage" />
+        <activity android:name=".BussinessPage" />
+        <activity android:name=".EntertaimentPage" />
+        <activity android:name=".SportPage" />
+        <activity
+            android:name=".PopupActivity"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".WebViewContent" />
+        <activity android:name=".MorePage" />
+        <activity android:name=".FavoritePopupActivity"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider152250492003435"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
+    </application>
+
+
+</manifest>

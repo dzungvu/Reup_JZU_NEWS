@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnuBack"
+        app:showAsAction="ifRoom"
+        android:title="Back"
+        android:icon="@drawable/arrow_left"
+        />
+    <item
+        android:title="Grid view"
+        app:showAsAction="never"
+        android:id="@+id/mnu_news_grid_view"
+        />
+    <item
+        android:title="List View"
+        android:id="@+id/mnu_news_list_view"
+        app:showAsAction="never"
+        />
+
+</menu>
